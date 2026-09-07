@@ -3,174 +3,256 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tristan Carlo Gorospe Jara - Portfolio</title>
+    <title>Tristan Carlo Gorospe Jara - IT Portfolio</title>
+    <meta name="description" content="IT graduate specializing in data management and AI-augmented development, based in Baguio City, Philippines.">
+    <meta property="og:title" content="Tristan Carlo Gorospe Jara - IT Portfolio">
+    <meta property="og:description" content="IT graduate specializing in data management and AI-augmented development. Based in Baguio City, Philippines.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="Profile.jpg">
+    <meta property="og:site_name" content="Tristan Jara - IT Portfolio">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Tristan Carlo Gorospe Jara - IT Portfolio">
+    <meta name="twitter:description" content="IT graduate specializing in data management and AI-augmented development. Based in Baguio City, Philippines.">
+    <meta name="theme-color" content="#EEF1F4">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0A0F16">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%23141D2B'/%3E%3Ccircle cx='32' cy='32' r='6' fill='%232A5BD7'/%3E%3Cpath d='M32 8v14M32 42v14M8 32h14M42 32h14' stroke='%23FAFBFD' stroke-width='4'/%3E%3C/svg%3E">
     <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="preload" as="image" href="Profile.jpg">
+    <link rel="preload" as="font" href="fonts/space-grotesk-latin.woff2" type="font/woff2" crossorigin>
+    <link rel="preload" as="font" href="fonts/jetbrains-mono-latin.woff2" type="font/woff2" crossorigin>
+    <noscript><style>[data-reveal],.rise{opacity:1;transform:none;filter:none;animation:none}</style></noscript>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <nav>
-                <div class="logo">Tristan Jara</div>
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </nav>
-        </div>
-    </header>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <main>
+    <nav class="nav-dock" aria-label="Main navigation">
+        <a class="logo" href="#hero"><span class="logo-mark" aria-hidden="true"></span>Tristan Jara</a>
+        <div class="nav-menu" id="nav-menu">
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <main id="main">
         <section id="hero">
-            <div class="container hero-content fade-in-up">
-                <div class="hero-text">
-                    <h1>Hello, I'm <span class="highlight">Tristan Carlo Gorospe Jara</span></h1>
-                    <p class="subtitle">IT Graduate specializing in Data Management and AI-Augmented Development</p>
-                    <p class="summary">Early-career IT professional with hands-on experience in data management, AI-augmented development, and workflow automation. Motivated to help teams modernize operations and make data-driven decisions.</p>
-                    <div class="cta-buttons">
-                        <a href="#contact" class="btn primary">Get in Touch</a>
-                        <a href="#projects" class="btn secondary">View Projects</a>
+            <div class="container hero-inner">
+                <div class="hero-copy">
+                    <p class="hero-status rise d2">
+                        <span class="dot" aria-hidden="true"></span>
+                        <span>Open to entry-level and internship roles</span>
+                    </p>
+                    <h1 class="rise">
+                        <span class="line" style="--d: 400ms"><span class="line-in">Tristan Carlo</span></span>
+                        <span class="line name-line" style="--d: 560ms"><span class="line-in">Gorospe Jara</span></span>
+                    </h1>
+                    <p class="subtitle rise d4">IT graduate with 3+ years turning paper clinic workflows into practical digital systems.</p>
+                    <div class="cta-buttons rise d5">
+                        <a href="#contact" class="btn primary">Get in touch
+                            <span class="arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+                        </a>
+                        <a href="#projects" class="btn ghost">View work
+                            <span class="arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+                        </a>
                     </div>
                 </div>
-                <div class="hero-image">
-                    <img src="Profile.jpg" alt="Tristan Carlo Gorospe Jara">
-                </div>
+                <figure class="hero-sheet rise d1" aria-label="Portrait of Tristan Carlo Gorospe Jara">
+                    <div class="sheet-tilt">
+                        <div class="frame sheet-frame">
+                            <div class="sheet-face">
+                                <img src="Profile.jpg" alt="Portrait of Tristan Carlo Gorospe Jara">
+                            </div>
+                            <figcaption class="sheet-caption">
+                                <span>Tristan Jara</span>
+                                <span>Baguio City</span>
+                            </figcaption>
+                        </div>
+                    </div>
+                </figure>
             </div>
         </section>
 
         <section id="about">
-            <div class="container fade-in-up">
-                <h2>Professional Summary</h2>
-                <p>I have led the transition from manual to digital workflows for 500+ dental patients, improving operational efficiency and data accuracy. My strengths include data visualization, data management, process automation, and cross-functional collaboration, supported by clear communication and problem-solving.</p>
+            <div class="container">
+                <div class="manifesto" data-reveal>
+                    <h2>Practical systems for real clinics</h2>
+                    <p class="lede">I've spent 3+ years at our family clinic in Baguio turning paper workflows into practical digital systems. That work became DentVault, an offline patient management system that runs daily and cut manual data entry by about 40%. Data management, process improvement, and AI-assisted development are my daily tools.</p>
+                </div>
+                <div class="readouts" data-reveal>
+                    <div class="readout"><b>500+</b><span>Patient records validated</span></div>
+                    <div class="readout"><b>~40%</b><span>Manual data entry reduced</span></div>
+                    <div class="readout"><b>3+</b><span>Years in clinic operations</span></div>
+                </div>
             </div>
         </section>
 
         <section id="experience">
-            <div class="container fade-in-up">
-                <h2>Work Experience</h2>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-date">Aug 2022 – Present</div>
-                        <div class="timeline-content">
+            <div class="container">
+                <div class="section-head" data-reveal>
+                    <span class="eyebrow">Track</span>
+                    <h2>Where I've worked</h2>
+                    <span class="section-rule" aria-hidden="true"></span>
+                </div>
+                <div class="ledger">
+                    <article class="ledger-row" data-reveal>
+                        <div class="ledger-side">
+                            <p class="ledger-org">Jara Dental Clinic</p>
+                            <p class="ledger-where"><span>Baguio City</span></p>
+                            <p class="ledger-years mono">Aug 2022 - present</p>
+                        </div>
+                        <div class="ledger-body">
                             <h3>Technical Administrative Assistant</h3>
-                            <h4>Jara Dental Clinic, Baguio City</h4>
-                            <ul>
-                                <li>Increased patient satisfaction by streamlining communication and managing inquiries with timely responses.</li>
-                                <li>Ensured compliance with health documentation standards while handling sensitive patient data for 500+ records.</li>
-                                <li>Identified workflow bottlenecks and developed a Python-based patient management system to replace pen-and-paper processes.</li>
-                                <li>Analyzed operational gaps, upgraded, and continuously maintained the system to DentVault with the assistance of AI tools (Claude/Trae).</li>
-                                <li>Implemented solutions using modern technologies (Tauri, Svelte, TailwindCSS, SQLite), streamlining appointments and billing while maintaining 100% health compliance.</li>
+                            <ul class="duties">
+                                <li>Managed and validated 500+ patient records with full local compliance, keeping data accurate, organized, and audit-ready.</li>
+                                <li>Built a Python-based patient management system that cut manual data entry time by ~40% across clinic operations.</li>
+                                <li>Upgraded the system into DentVault, improving appointment, billing, and record workflows with SQL queries and AI-assisted development.</li>
+                                <li>Coordinated daily technical and administrative tasks, replacing ad-hoc processes with maintained, documented systems.</li>
+                                <li>Wrote process documentation and supported audit readiness by keeping records and reports accurate for review.</li>
                             </ul>
                         </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-date">Feb 2022 – May 2022</div>
-                        <div class="timeline-content">
+                    </article>
+                    <article class="ledger-row" data-reveal>
+                        <div class="ledger-side">
+                            <p class="ledger-org">Code and Theory</p>
+                            <p class="ledger-where"><span>Pasig City</span></p>
+                            <p class="ledger-years mono">Feb 2022 - May 2022</p>
+                        </div>
+                        <div class="ledger-body">
                             <h3>Front-End Web Developer Intern</h3>
-                            <h4>Code and Theory, Pasig City</h4>
-                            <ul>
-                                <li>Partnered with development teams to build ReactJS/Tailwind/Firebase web apps, delivering user-friendly prototypes ahead of schedule through rapid iteration.</li>
-                                <li>Translated wireframes into functional user interfaces, demonstrating adaptability across multiple client projects.</li>
+                            <ul class="duties">
+                                <li>Collaborated with development teams to build responsive web applications with ReactJS, Tailwind CSS, and Firebase.</li>
+                                <li>Turned wireframes into working UI across multiple client projects, adapting to different stacks and design systems.</li>
                             </ul>
                         </div>
-                    </div>
+                    </article>
                 </div>
             </div>
         </section>
 
         <section id="projects">
-            <div class="container fade-in-up">
-                <h2>Projects</h2>
-                <div class="project-card">
-                    <div>
-                        <h3>DentVault</h3>
-                        <p class="project-description">A patient management system developed for multiple dental clinics in the Philippines. It streamlines manual workflows such as appointment handling, patient records management, and billing while maintaining health compliance. Built with Tauri, Svelte, TailwindCSS, and SQLite.</p>
-                        <a href="https://dentvault.netlify.app" target="_blank" class="btn primary">View Project</a>
-                    </div>
+            <div class="container">
+                <div class="section-head" data-reveal>
+                    <h2>Selected work</h2>
+                    <span class="section-rule" aria-hidden="true"></span>
                 </div>
+                <article class="pane frame" data-reveal>
+                    <!-- TODO: DentVault app screenshot, 1200x1200. Swap in a real capture when available. -->
+                    <div class="pane-visual">
+                        <span class="monogram">DV</span>
+                        <span class="mono visual-caption">Tauri + Svelte, live in clinic operations</span>
+                    </div>
+                    <div class="pane-body">
+                        <h3>DentVault</h3>
+                        <p class="pane-desc">An offline patient management system for dental clinics. It replaces paper appointment books, patient records, and billing with one compliant workflow, and stays practical enough for non-technical staff to run daily.</p>
+                        <div class="chips">
+                            <span>Tauri</span>
+                            <span>Svelte</span>
+                            <span>TailwindCSS</span>
+                            <span>SQLite</span>
+                        </div>
+                        <div class="pane-foot">
+                            <a href="https://dentvault.netlify.app" target="_blank" class="btn primary">Open live app
+                                <span class="arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+                            </a>
+                            <p class="mono pane-status">Status: live</p>
+                        </div>
+                    </div>
+                </article>
             </div>
         </section>
 
         <section id="education">
-            <div class="container fade-in-up">
-                <h2>Education</h2>
-                <div class="education-card">
-                    <h3>Bachelor of Science in Information Technology</h3>
-                    <h4>Saint Louis University, Baguio City</h4>
-                    <p><strong>Capstone Project:</strong> Contact Tracing Website Application for EMPITECH</p>
-                    <p><strong>Achievement:</strong> Consistent Dean’s Lister</p>
+            <div class="container">
+                <div class="section-head" data-reveal>
+                    <h2>Education</h2>
+                    <span class="section-rule" aria-hidden="true"></span>
+                </div>
+                <div class="credential frame" data-reveal>
+                    <div class="credential-key mono">
+                        <span>Degree</span>
+                        <span>School</span>
+                        <span>Capstone</span>
+                        <span>Honors</span>
+                    </div>
+                    <div class="credential-values">
+                        <span>Bachelor of Science in Information Technology</span>
+                        <span>Saint Louis University, Baguio City</span>
+                        <span>Contact tracing website application for EMPITECH</span>
+                        <span>Consistent Dean's Lister</span>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="skills">
-            <div class="container fade-in-up">
-                <h2>Skills</h2>
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h3>Technical Skills</h3>
-                        <div class="tags">
-                            <span>Python</span>
-                            <span>SQL</span>
-                            <span>React</span>
-                            <span>Svelte</span>
-                            <span>TailwindCSS</span>
-                            <span>Manual Software Testing</span>
-                            <span>Data Analysis & Visualization</span>
-                            <span>UI/UX Design</span>
-                            <span>Front-End Development</span>
-                        </div>
+            <div class="container">
+                <div class="section-head" data-reveal>
+                    <span class="eyebrow">Stack</span>
+                    <h2>Capabilities</h2>
+                    <span class="section-rule" aria-hidden="true"></span>
+                </div>
+                <div class="stack-band">
+                    <p class="stack-band-label" data-reveal>Development</p>
+                    <div class="stack-grid">
+                        <div class="skill-tile" style="--w: 4; --i: 0ms" data-reveal><span class="skill-name">Python</span><span class="skill-tag">Language</span></div>
+                        <div class="skill-tile" style="--w: 3; --i: 60ms" data-reveal><span class="skill-name">SQL</span><span class="skill-tag">Database</span></div>
+                        <div class="skill-tile" style="--w: 5; --i: 120ms" data-reveal><span class="skill-name">JavaScript</span><span class="skill-tag">Language</span></div>
+                        <div class="skill-tile" style="--w: 5; --i: 0ms" data-reveal><span class="skill-name">HTML / CSS</span><span class="skill-tag">Front-end</span></div>
+                        <div class="skill-tile" style="--w: 4; --i: 60ms" data-reveal><span class="skill-name">REST APIs</span><span class="skill-tag">API</span></div>
+                        <div class="skill-tile" style="--w: 3; --i: 120ms" data-reveal><span class="skill-name">React</span><span class="skill-tag">Framework</span></div>
+                        <div class="skill-tile" style="--w: 4; --i: 0ms" data-reveal><span class="skill-name">Svelte</span><span class="skill-tag">Framework</span></div>
+                        <div class="skill-tile" style="--w: 5; --i: 60ms" data-reveal><span class="skill-name">Front-end development</span><span class="skill-tag">Specialty</span></div>
+                        <div class="skill-tile" style="--w: 3; --i: 120ms" data-reveal><span class="skill-name">Manual testing</span><span class="skill-tag">QA</span></div>
                     </div>
-                    <div class="skill-category">
-                        <h3>Tools</h3>
-                        <div class="tags">
-                            <span>Google Suite</span>
-                            <span>Figma</span>
-                            <span>Git</span>
-                            <span>SQLite</span>
-                            <span>Tableau</span>
-                            <span>n8n</span>
-                            <span>Tauri</span>
-                            <span>AI Tools (Claude, Trae)</span>
-                            <span>Low-Code Platforms</span>
-                        </div>
+                </div>
+                <div class="stack-band">
+                    <p class="stack-band-label" data-reveal>Data &amp; tools</p>
+                    <div class="stack-grid">
+                        <div class="skill-tile" style="--w: 5; --i: 0ms" data-reveal><span class="skill-name">Data analysis</span><span class="skill-tag">Data</span></div>
+                        <div class="skill-tile" style="--w: 4; --i: 60ms" data-reveal><span class="skill-name">Data validation</span><span class="skill-tag">Data</span></div>
+                        <div class="skill-tile" style="--w: 3; --i: 120ms" data-reveal><span class="skill-name">Data visualization</span><span class="skill-tag">Data</span></div>
+                        <div class="skill-tile" style="--w: 4; --i: 0ms" data-reveal><span class="skill-name">Tableau</span><span class="skill-tag">Tool</span></div>
+                        <div class="skill-tile" style="--w: 5; --i: 60ms" data-reveal><span class="skill-name">Process improvement</span><span class="skill-tag">Practice</span></div>
+                        <div class="skill-tile" style="--w: 3; --i: 120ms" data-reveal><span class="skill-name">Documentation</span><span class="skill-tag">Practice</span></div>
+                        <div class="skill-tile" style="--w: 4; --i: 0ms" data-reveal><span class="skill-name">Google Workspace</span><span class="skill-tag">Tool</span></div>
+                        <div class="skill-tile" style="--w: 3; --i: 60ms" data-reveal><span class="skill-name">Git</span><span class="skill-tag">Tool</span></div>
+                        <div class="skill-tile" style="--w: 5; --i: 120ms" data-reveal><span class="skill-name">AI-assisted development</span><span class="skill-tag">Practice</span></div>
                     </div>
+                </div>
+                <div class="console" data-reveal>
+                    <p class="mono console-label">Currently running</p>
+                    <p class="mono console-items">DentVault / SQLite / Tauri / Svelte</p>
                 </div>
             </div>
         </section>
 
         <section id="contact">
-            <div class="container fade-in-up">
-                <h2>Contact Me</h2>
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <strong>Location:</strong> Baguio City, Benguet
-                    </div>
-                    <div class="contact-item">
-                        <strong>Phone:</strong> +63 916 595 2826
-                    </div>
-                    <div class="contact-item">
-                        <strong>Email:</strong> <a href="mailto:tristancarloj@gmail.com">tristancarloj@gmail.com</a>
-                    </div>
+            <div class="terminal">
+                <div class="container term-inner" data-reveal>
+                    <p class="mono term-line">// reach me directly</p>
+                    <a class="email-link" href="mailto:tristancarloj@gmail.com">tristancarloj@gmail.com
+                        <span class="arrow"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 17 17 7M8 7h9v9"/></svg></span>
+                    </a>
+                    <p class="mono term-meta">Baguio City, Benguet / +63 916 595 2826</p>
                 </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2024 Tristan Carlo Gorospe Jara. All rights reserved.</p>
+        <div class="container footer-inner">
+            <p class="mono">&copy; 2026 Tristan Carlo Gorospe Jara</p>
+            <a href="#hero" class="back-to-top">Back to top
+                <span class="arrow"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 19V5M5 12l7-7 7 7"/></svg></span>
+            </a>
         </div>
     </footer>
 
