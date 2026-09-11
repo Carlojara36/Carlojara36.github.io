@@ -773,6 +773,20 @@ section {
     overflow: hidden;
 }
 
+.pane + .pane {
+    margin-top: clamp(1.5rem, 3vw, 2rem);
+}
+
+.pane-flip {
+    grid-template-columns: 5fr 7fr;
+}
+
+.pane-flip .pane-visual {
+    order: 2;
+    border-right: 0;
+    border-left: 1px solid var(--hairline);
+}
+
 .pane-visual {
     position: relative;
     display: flex;
@@ -1261,6 +1275,11 @@ footer {
         border-right: 0;
         border-bottom: 1px solid var(--hairline);
         min-height: 220px;
+    }
+
+    .pane-flip .pane-visual {
+        order: 0;
+        border-left: 0;
     }
 
     .credential {
